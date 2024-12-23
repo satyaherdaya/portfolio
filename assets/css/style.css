@@ -1,0 +1,366 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+#about {
+    padding-block: 80px;
+}
+
+#skill {
+    padding-top: 40px;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    padding-inline: 20px;
+    padding-block: 15px;
+    box-shadow: 0 1px 8px 1px #EEEEEE;
+    position: sticky;
+    top: 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .header-title {
+    flex: 1;
+}
+
+header .nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 2;
+}
+
+header .nav-container .bar,
+.bar .up,
+.bar .down {
+    display: none;
+}
+
+header .nav-container .default {
+    flex: 2;
+}
+
+header .nav-container .default {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+header .nav-container .default a {
+    list-style-type: none;
+    /* border: 3px solid transparent; */
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+header .nav-container .default a:hover {
+    /* border: 3px solid #A91D3A; */
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    transition: all 0.2s ease-in;
+}
+
+header .nav-container .default a {
+    text-decoration: none;
+    color: #A91D3A;
+}
+
+main article section {
+    margin-block: 50px;
+    min-height: 225px;
+}
+
+main article .about-layout {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-block: 30px;
+}
+
+main article .about-layout .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    flex-basis: 750px;
+}
+
+main article .about-layout .about-me h2 {
+    color: #C73659;
+}
+
+main article .about-layout .picture img {
+    height: 400px;
+    border: 0 none transparent;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+main article .skill-title {
+    text-align: end;
+    background-color: #C73659;
+    border-bottom-right-radius: 50px;
+    width: 60%;
+}
+
+main article .skill-title h2 {
+    color: #EEEEEE;
+    margin-inline: 50px;
+}
+
+main article .skill-layout {
+    /* background-color: #EEEEEE; */
+    border-radius: 25px;
+    padding: 10px;
+    margin-block: 40px;
+}
+
+main article .skill-layout ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+main article .skill-layout ul li {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+}
+
+main article .skill-layout ul li:hover img {
+    height: 150px;
+    margin-inline: -50px;
+    transition: all 1s ease-out;
+}
+
+main article .skill-layout ul li p {
+    font-weight: bold;
+    color: #A91D3A;
+    cursor: default;
+}
+
+main article .skill-layout ul li img {
+    height: 100px;
+}
+
+main article .hobby-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+main article .hobby-title {
+    text-align: start;
+    margin-block: 10px;
+    background-color: #C73659;
+    border-bottom-left-radius: 50px;
+    width: 75%;
+}
+
+main article .hobby-title h2 {
+    margin-inline: 50px;
+    color: #EEEEEE;
+}
+
+main article .hobby-layout {
+    margin-inline: 50px;
+}
+
+main article .hobby-layout ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+main article .hobby-layout ul li {
+    padding-top: 50px;
+    padding-inline: 50px;
+    list-style-type: none;
+}
+
+main #connect {
+    position: fixed;
+    width: 50px;
+    right: 0;
+    top: 50%;
+    color: #EEEEEE;
+    background-color: #A91D3A;
+    transform: translateY(-50%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+}
+
+main article .project-title {
+    color: #A91D3A;
+    text-align: center;
+}
+
+#project {
+    margin-bottom: 60px;
+}
+
+main article .project-layout {
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 50px;
+    margin-block: 30px;
+}
+
+main article .project-layout div {
+    flex-basis: 300px;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 1px 8px 1px #EEEEEE;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+main article .project-layout .project-tech {
+    height: 25px;
+}
+
+main article .project-layout ul {
+    display: flex;
+    gap: 5px;
+}
+
+main article .project-layout ul li {
+    list-style-type: none;
+}
+
+main aside .connect-layout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main aside .connect-layout a {
+    padding-block: 5px;
+    padding-inline: 15px;
+    text-decoration: none;
+    color: #EEEEEE;
+    display: inline-block;
+}
+
+main aside .connect-layout a:hover .github-icon {
+    color: #151515;
+    transition: all 0.25s ease-in-out;
+}
+
+main aside .connect-layout a:hover .gitlab-icon {
+    color: #fc6d26;
+    transition: all 0.25s ease-in-out;
+}
+
+main aside .connect-layout a:hover .linkedin-icon {
+    color: #0a66c2;
+    transition: all 0.25s ease-in-out;
+}
+
+footer .footer-layout {
+    position: fixed;
+    width: 400px;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    text-align: center;
+    color: #EEEEEE;
+    background-color: #A91D3A;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer .footer-layout a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+footer .footer-layout a:hover {
+    text-decoration: none;
+    color: #151515;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    header .default {
+        margin-block: 20px;
+        display: none !important;
+    }
+
+    header .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .nav-container .bar {
+        padding: 5px 20px;
+        display: inline-block;
+    }
+
+    header .nav-container .bar .down {
+        display: inline-block;
+    }
+
+    header .nav-container:hover .default {
+        display: flex !important;
+        flex-flow: column wrap !important;
+    }
+
+    header .nav-container:hover .bar .up {
+        display: inline-block;
+    }
+
+    header .nav-container:hover .bar .down {
+        display: none;
+    }
+
+    #about {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main article .skill-layout ul {
+        justify-content: center;
+        gap: 100px;
+    }
+
+    main article .skill-layout ul li:hover img {
+        transition: all 1s ease-out;
+    }
+
+    footer .footer-layout {
+        width: 250px;
+    }
+
+}
